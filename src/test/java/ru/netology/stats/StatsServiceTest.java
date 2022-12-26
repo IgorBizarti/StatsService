@@ -9,11 +9,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testSum (){
+    public void testSum() {
 
         StatsService service = new StatsService();
 
-        long[] sales ={8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 180;
         long actual = service.sum(sales);
@@ -23,11 +23,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testCalc (){
+    public void testCalc() {
 
         StatsService service = new StatsService();
 
-        long[] sales ={8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 180 / 12;
         long actual = service.average(sales);
@@ -37,11 +37,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testMax (){
+    public void testMax() {
 
         StatsService service = new StatsService();
 
-        long[] sales ={8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 8;
         long actual = service.maxSales(sales);
@@ -52,11 +52,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testMin (){
+    public void testMin() {
 
         StatsService service = new StatsService();
 
-        long[] sales ={8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 9;
         long actual = service.minSales(sales);
@@ -68,11 +68,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testBellow (){
+    public void testBellow() {
 
         StatsService service = new StatsService();
 
-        long[] sales ={8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 5;
         long actual = service.belowAverage(sales);
@@ -82,11 +82,11 @@ class StatsServiceTest {
 
     @Test
 
-    public void testUnder(){
+    public void testUnder() {
 
         StatsService service = new StatsService();
 
-        long[] sales ={8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 5;
         long actual = service.underAverage(sales);
